@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+  width: 100vvw;
+  height: 100vh;
+  background-color: orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Form {
+  width: 100vw;
+  padding: 12px 20px;
+  margin: 8px, 0;
+  box-sizing: border-box;
+}

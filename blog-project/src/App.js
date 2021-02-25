@@ -1,11 +1,13 @@
-import './App.css';
+
+import UserList from './Components/RegistrationForm'
+//import 'bootstrap/dist/css/bootstrap.min.css'
+import './User.css'
+
 
 function App() {
   return (
     <div className="App">
-      
-        Hello
-      
+       <UserList/>
     </div>
   );
 }
