@@ -8,8 +8,33 @@
   justify-content: center;
 }
 .Form {
-  width: 100vw;
-  padding: 12px 20px;
-  margin: 8px, 0;
-  box-sizing: border-box;
+  width: 300px;
+  height: 200px;
+  background-color: olive;
+  box-shadow: 3px 3px 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  flex-direction: column;
+}
+
+.title {
+  color: blue;
+  flex: 20%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.Form .input {
+  width: 250px;
+  height: 40px;
+  font-size: 25px;
+  border-radius: 6px;
+  border: none;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
 }

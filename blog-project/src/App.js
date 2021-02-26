@@ -1,7 +1,7 @@
 
 import UserList from './Components/RegistrationForm'
-//import 'bootstrap/dist/css/bootstrap.min.css'
-import './User.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
+//import './User.css'
 
 
 function App() {
