@@ -1,17 +1,18 @@
-
-import UserList from './Components/Form'
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Form from './Components/Form'
-import './Form.css'
+//import Form2 from './Components/Form2'
+import './App.css'
+import{Button,Form,FormGroup,Label,Input}
+from 'reactstrap'
+import Forms from './Components/Forms'
 
+function App(){
+  return(
+    <div >
+    <Forms/>
+    </div>
+  )
 
-function App() {
-  return (
-    
-<div className="App">
-<Form/>
-</div>
-  );
 }
 
-export default App;
+export default App
