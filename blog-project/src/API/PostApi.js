@@ -27,7 +27,7 @@ class PostApi{
     }
 
     static deletePost(post_url){//deletes a post in the API
-        return Axios.deletes(`/posts/jsonplaceholder.typicode.com/posts`)
+        return Axios.delete(`/posts/jsonplaceholder.typicode.com/posts`)
     }
 
     

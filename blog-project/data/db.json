@@ -1,0 +1,18 @@
+{
+    "blogs":[
+    {
+        "title":"My First Blog",
+        "body":"Why do we use it",
+        "author":"Mario",
+        "id":"1"
+
+    },
+    {
+        "title":"My Second Blog",
+        "body":"Why not we use it",
+        "author":"Luigi",
+        "id":"2"
+
+    }
+]
+}
