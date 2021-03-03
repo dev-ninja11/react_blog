@@ -2,6 +2,7 @@
 import Axios from './BaseApi'
 
 class PostApi{
+    
     static getAllPosts(){//gets all the posts from the API
         return Axios.get(`/posts/`)
     }

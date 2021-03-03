@@ -3,23 +3,20 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
 import{Button,Form,FormGroup,Label,Input} from 'reactstrap'
 //import Forms from './Components/Forms'
-import PostList from './Components/PostList';
-import CategoryDetail from './Components/CategoryDetail'
+import Posts from './Components/Posts';
 import {BrowserRouter as Router,Route, Switch} from 'react-router-dom'
 import Navbar from './Components/Navbar'
-//import About from './Components/About'
-//import Create from './Components/Create';
-//import BlogDetails from './Components/BlogDetail';
-import Axios from 'axios'
+import axios from 'axios'
+import UsersList from './Components/UsersList';
+import CategoryDetail from './Components/CategoryDetail';
 
 function App() {
   
   return (
-    <div className="App">
-      <Navbar />
-      <div className="cont"></div>
-      <CategoryDetail/>
     
+    <div className="App">
+      <Navbar/>
+      <CategoryDetail/>
     </div>
     
   )
