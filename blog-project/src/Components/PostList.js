@@ -3,7 +3,7 @@ import React, {useState, useEffect} from 'react'
 import { Link, useParams } from 'react-router-dom';
 import PostApi from '../API/PostApi'
 
-function CategoryDetail() {
+function PostList() {
     
     const [post_list, setPostList] = useState([])
 
@@ -17,12 +17,9 @@ function CategoryDetail() {
     }
 
     useEffect(() => {
-
         getListofPosts()
 
     }, [])
-
-    
     return (
         <div className="container">
             <h4> List of Posts</h4>
@@ -39,4 +36,4 @@ function CategoryDetail() {
     )
 }
 
-export default CategoryDetail
+export default PostList

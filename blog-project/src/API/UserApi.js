@@ -32,4 +32,4 @@ class UserApi {
 
 }
 
-export default userApi
+export default UserApi
