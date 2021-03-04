@@ -2,16 +2,22 @@ import {Link} from 'react-router-dom'
 
 const Navbar = () => {
     return ( 
-      <nav className="navbar">
-        <h1>The Blogs</h1>
-        <div className='links'></div>
-        <Link href='/'>Forms</Link>
-        <Link href='/users'>Users</Link>
-      </nav>
-      
-      
-      
-    
+      <ul className="nav justify-content-center">
+        <li className="nav-item">
+        <Link className="nav-link active" to="/">Homepage</Link>
+        </li>
+        <li className="nav-item">
+         <Link className="nav-link" to="/users">Users</Link>
+        </li>
+        <li className="nav-item">
+        <Link className="nav-link" to="/posts">Posts</Link>
+        </li>
+        <li className="nav-item">
+        <Link className="nav-link" to="/forms">Forms</Link>
+        </li>
+        
+  
+</ul>
      );
 }
  

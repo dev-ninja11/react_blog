@@ -41,7 +41,7 @@ const Forms = () => {
         <div onSubmit={handleSubmit}>
         <Form className='login-form'>
             <h1>
-                <span className='text-center'>Blog Post</span>
+                <span className='text-center'>Login</span>
             </h1>
 
             <FormGroup>

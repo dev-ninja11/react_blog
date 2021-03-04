@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import PostApi from '../API/PostApi'
+import {Link,useParams} from 'react-router-dom'
 
 function PostList() {
     
@@ -22,8 +23,11 @@ function PostList() {
         <div className="container">
             <h4> List of Posts</h4>
             {post_list && post_list.map(post => (
-                <p  key={post.id}> 
+     
+                    <p key={post.id}> 
+                    <Link to ={`/postDetails/${post.id}`}>
                         {post.title}
+                    </Link>
                 </p>
             ))}
 

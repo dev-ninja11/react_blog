@@ -6,7 +6,9 @@ import Forms from './Components/Forms'
 import {BrowserRouter as Router,Route, Switch} from 'react-router-dom'
 import Navbar from './Components/Navbar'
 import PostList from './Components/PostList';
-import UsersList from './Components/UserList';
+import UsersList from './Components/UsersList';
+import UsersDetails from './Components/UsersDetails';
+import PostDetails from './Components/PostDetail';
 
 function App() {
   
@@ -17,15 +19,23 @@ function App() {
         <div className="content">
           <Switch>
             
-            <Route path='/'>
+            <Route  exact path='/'>
               <Forms/>
             </Route>
 
-            <Route  exact path="/user">
+            <Route   path="/users">
               <UsersList/>
             </Route>
 
-            <Route  exact path="/post">
+            <Route  exact path="/details/:id">
+              <UsersDetails/>
+            </Route>
+
+            <Route  exact path="/postDetails/:id">
+              <PostDetails/>
+            </Route>
+
+            <Route      exact path="/posts">
               <PostList/>
             </Route>
 
