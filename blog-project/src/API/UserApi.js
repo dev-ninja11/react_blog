@@ -5,10 +5,6 @@ class UserApi {
         return Axios.get(`/users/`)
     }
 
-    static getUser(user_url) {
-        return Axios.get(`users/$(jsonplaceholder.typicode.com/users)`)
-    }
-
     static newUser(new_user_object) {
         return Axios.user(`users`, new_user_object)
     }

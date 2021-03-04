@@ -9,8 +9,13 @@ const UsersDetails = ({users,title}) => {
           users.hits.map(item => (
               <div className="users" key={item.id}>
                   
-                  <p>{item.name}</p>
-                  
+                  <ul class="list-group">
+                      <li class="list-group-item">{item.name}</li>
+                        <li class="list-group-item"></li>
+
+  
+</ul>
+                  <p></p>  
               </div>  
           ))}
       

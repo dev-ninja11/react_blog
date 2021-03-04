@@ -1,6 +1,4 @@
 import React, {useState, useEffect} from 'react'
-//import '../../css/CategoryDetail.css'
-import { Link, useParams } from 'react-router-dom';
 import UserApi from '../API/UserApi'
 
 function Use() {
@@ -13,6 +11,7 @@ function Use() {
                 //Set our component's `post_list` array to the results of the API call
                 // which would be 'response.data' object
                 setUserList(response.data) 
+                
             })      
     }
 
@@ -26,9 +25,6 @@ function Use() {
     return (
         <div className="container">
             <h4> List of Users</h4>
-            <p>
-                These are our current list of blog posts
-            </p>
             {user_list && user_list.map(user => (
                 <p  key={user.id}> 
                     {user.title}

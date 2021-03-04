@@ -1,6 +1,4 @@
 import React, {useState, useEffect} from 'react'
-//import '../../css/CategoryDetail.css'
-import { Link, useParams } from 'react-router-dom';
 import PostApi from '../API/PostApi'
 
 function PostList() {
@@ -23,9 +21,6 @@ function PostList() {
     return (
         <div className="container">
             <h4> List of Posts</h4>
-            <p>
-                These are our current list of blog posts
-            </p>
             {post_list && post_list.map(post => (
                 <p  key={post.id}> 
                         {post.title}
