@@ -1,9 +1,11 @@
 import React,{useState,useEffect} from 'react'
 import{Button,Form,FormGroup,Label,Input}
 from 'reactstrap'
+import UserApi from '../API/UserApi'
 
 
 const Forms = () => {
+   //UserApi.new user
 
 //initialize a new state, and method to set it toa new state
     const [firstName,setFirstName]= useState('')
@@ -20,6 +22,7 @@ const Forms = () => {
         const people = { firstName, lastName, email, password }
         console.log(people)
         
+        //userApi
 //checks to see if all fields have been filled out,then a new person is created
 //         if(firstName &&lastName && email && password){
 //             const newPerson={firstName,lastName,email,password}
@@ -45,7 +48,7 @@ const Forms = () => {
         <div onSubmit={handleSubmit}>
         <Form className='login-form'>
             <h1>
-                <span className='text-center'>Login</span>
+                <span className='text-center'>Add A New User</span>
             </h1>
 
             <FormGroup>
@@ -100,7 +103,7 @@ const Forms = () => {
             </FormGroup>
 
             <Button 
-                 type='submit' className='btn-secondary btn-lg btn-block '>Log in
+                 type='submit' className='btn-secondary btn-lg btn-block '>Add User
             </Button>
         </Form>
         </div>

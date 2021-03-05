@@ -8,7 +8,7 @@ class PostApi{
     }
 
     static getPost(post_url){
-        return Axios.get(`posts/$(jsonplaceholder.typicode.com/posts)`)
+        return Axios.get(`posts/`,post_url)
     }
 
     static newPost(new_post_object){

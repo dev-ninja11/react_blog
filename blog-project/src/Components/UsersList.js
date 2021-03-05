@@ -24,7 +24,7 @@ function UsersList() {
     return (
         <div className="user">
             <h4> List of Users</h4>
-            {user_list && user_list.map(user => (
+            {user_list.map(user => (
                 <p key={user.id}> 
         
                     <Link to = {`/details/${user.id}`}>
