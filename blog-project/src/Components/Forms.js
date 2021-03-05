@@ -17,24 +17,28 @@ const Forms = () => {
 //Functions handles when the form is submitted
     const handleSubmit = (e) => {
         e.preventDefault();//prevents the webpage from reloading when submitting
+        const people = { firstName, lastName, email, password }
+        console.log(people)
         
 //checks to see if all fields have been filled out,then a new person is created
-        if(firstName &&lastName && email && password){
-            const newPerson={firstName,lastName,email,password}
-            setPerson((person) => {
-                return[...person,newPerson]
-            })
+//         if(firstName &&lastName && email && password){
+//             const newPerson={firstName,lastName,email,password}
+//             setPerson((person) => {
+//                 return [...person, newPerson]
+                
+//             })
 
-//sets the input back to an empty string after form is submitted
-            setFirstName('')
+// //sets the input back to an empty string after form is submitted
+             setFirstName('')
             setLastName('')
-            setEmail('')
-            setPassword('')
+             setEmail('')
+             setPassword('')
             
-        }else{
-            alert("Please Complete the form")
-        }
-    }
+//         }else{
+//             alert("Please Complete the form")
+//         }
+      
+     }
     
 
     return (

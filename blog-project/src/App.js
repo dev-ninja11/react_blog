@@ -9,6 +9,7 @@ import PostList from './Components/PostList';
 import UsersList from './Components/UsersList';
 import UsersDetails from './Components/UsersDetails';
 import PostDetails from './Components/PostDetail';
+import HomePage from './Components/Homepage'
 
 function App() {
   
@@ -20,7 +21,7 @@ function App() {
           <Switch>
             
             <Route  exact path='/'>
-              <Forms/>
+              <HomePage/>
             </Route>
 
             <Route   path="/users">
@@ -31,13 +32,19 @@ function App() {
               <UsersDetails/>
             </Route>
 
+            <Route      exact path="/posts">
+              <PostList/>
+            </Route>
+
             <Route  exact path="/postDetails/:id">
               <PostDetails/>
             </Route>
 
-            <Route      exact path="/posts">
-              <PostList/>
+            <Route      exact path="/forms">
+              <Forms/>
             </Route>
+
+            
 
           </Switch>
         </div>
