@@ -20,7 +20,7 @@ const UsersDetails = () => {
     useEffect(() => {
         getTheUser()
 
-    }, [])
+    },[])
 
     return ( 
         <div className='user-details'>

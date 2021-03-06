@@ -1,4 +1,3 @@
-import UsersDetails from "./UsersDetails"
 
 const HomePage = () => {
     return ( 

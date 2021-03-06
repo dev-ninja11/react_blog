@@ -11,12 +11,12 @@ class PostApi{
         return Axios.get(`posts/`,post_url)
     }
 
-    static newPost(new_post_object){
-        return Axios.post(`posts`,new_post_object)
-    }
-
     static getCommentforPost(post_url){
         return Axios.get(`/postsjsonplaceholder.typicode.com/posts/comments`)
+    }
+
+    static newPost(new_post_object){
+        return Axios.post(`posts`,new_post_object)
     }
 
     static updatePost(post_url, updated_post){

@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState} from 'react'
 import{Button,Form,FormGroup,Label,Input}
 from 'reactstrap'
 import UserApi from '../API/UserApi'
@@ -14,23 +14,23 @@ const Forms = () => {
     const [email,setEmail]= useState('')
     const [password,setPassword]= useState('')
 
-//creates a new person array when for  is submitted
-    const [person,setPerson]= useState([])
-
 //Functions handles when the form is submitted
     const handleSubmit = (e) => {
         e.preventDefault();//prevents the webpage from reloading when submitting
         const newPerson = { firstName, lastName, email, password }
         console.log(newPerson)
-        const postNewUser = () => {
-            UserApi.newUser(newPerson)
-                .then(response => {
-                    setPerson(response.data)
-                })
-                .catch(error => {
-                    console.log(error.message)
-                })
-        }
+        
+        UserApi.newUser({ newPerson })
+            .then(response => {
+                console.log(response)
+            })
+            .catch(error => {
+                console.log(error)
+            })
+            
+    
+    
+    
             //sets the input back to any empty string
              setFirstName('')
              setLastName('')
@@ -38,8 +38,6 @@ const Forms = () => {
              setPassword('')
     }
     
-    
-
     return (
         
         <Form className='login-form' onSubmit={handleSubmit}>

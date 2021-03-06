@@ -17,23 +17,18 @@ function UsersList() {
     }
     useEffect(() => {
         getAllUser()
-
     }, [])
 
-    
     return (
         <div className="user">
             <h4> List of Users</h4>
             {user_list.map(user => (
-                <p key={user.id}> 
-        
-                    <Link to = {`/details/${user.id}`}>
-                   
-                         {user.name}
+                <p key={user.id}>
+                    <Link to={`/details/${user.id}`}>
+                        {user.name}
                     </Link>
                 </p>
             ))}
-
         </div>
     )
 }

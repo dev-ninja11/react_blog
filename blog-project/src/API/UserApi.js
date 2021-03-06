@@ -6,14 +6,14 @@ class UserApi {
         return Axios.get(`/users/`)
     }
 
-    static newUser(new_user_object) {
-        return Axios.put(`/users`, new_user_object)
-    }
-
     static getUser(user_url) {
         return Axios.get(`/users/`,user_url)
     }
-
+    
+    static newUser(new_user_object) {
+        return Axios.post(`/users`, new_user_object)
+    }
+    
     static updateUser(user_url, updated_user) {
         return Axios.put(`/users/`, updated_user)
     }
