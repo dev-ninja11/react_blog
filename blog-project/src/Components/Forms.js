@@ -4,6 +4,7 @@ from 'reactstrap'
 import UserApi from '../API/UserApi'
 
 
+
 const Forms = () => {
    //UserApi.new user
 
@@ -19,37 +20,33 @@ const Forms = () => {
 //Functions handles when the form is submitted
     const handleSubmit = (e) => {
         e.preventDefault();//prevents the webpage from reloading when submitting
-        const people = { firstName, lastName, email, password }
-        console.log(people)
-        
-        //userApi
-//checks to see if all fields have been filled out,then a new person is created
-//         if(firstName &&lastName && email && password){
-//             const newPerson={firstName,lastName,email,password}
-//             setPerson((person) => {
-//                 return [...person, newPerson]
-                
-//             })
-
-// //sets the input back to an empty string after form is submitted
+        const newPerson = { firstName, lastName, email, password }
+        console.log(newPerson)
+        const postNewUser = () => {
+            UserApi.newUser(newPerson)
+                .then(response => {
+                    setPerson(response.data)
+                })
+                .catch(error => {
+                    console.log(error.message)
+                })
+        }
+            //sets the input back to any empty string
              setFirstName('')
-            setLastName('')
+             setLastName('')
              setEmail('')
              setPassword('')
-            
-//         }else{
-//             alert("Please Complete the form")
-//         }
-      
-     }
+    }
+    
     
 
     return (
-        <div onSubmit={handleSubmit}>
-        <Form className='login-form'>
+        
+        <Form className='login-form' onSubmit={handleSubmit}>
             <h1>
-                <span className='text-center'>Add A New User</span>
+                <span className='text-center'>Add User</span>
             </h1>
+
 
             <FormGroup>
                 <Label>First Name</Label>
@@ -103,10 +100,11 @@ const Forms = () => {
             </FormGroup>
 
             <Button 
-                 type='submit' className='btn-secondary btn-lg btn-block '>Add User
+                 type='submit' className='btn-secondary btn-lg btn-block '>Submit
             </Button>
+                
         </Form>
-        </div>
+        
     )
 }
 

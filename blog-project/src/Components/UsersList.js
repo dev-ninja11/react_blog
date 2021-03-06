@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import UserApi from '../API/UserApi'
-import './User.css'
+
 
 function UsersList() {
     
