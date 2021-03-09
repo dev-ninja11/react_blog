@@ -33,13 +33,9 @@ const UsersDetails = () => {
                   <li className="list-group-item">Email: {users.email}</li>
                   <li className="list-group-item">Phone: {users.phone}</li>
                   <li className="list-group-item">Street Address: {users.address.street}, {users.address.city}  {users.address.zipcode}</li>
-
-
-
                 </ul>
-                </div>
+            </div>
             ))}
-        
         </div>
      );
 }

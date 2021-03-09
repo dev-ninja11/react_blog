@@ -15,8 +15,6 @@ const Navbar = () => {
         <li className="nav-item">
         <Link className="nav-link" to="/forms">Add User</Link>
         </li>
-        
-  
 </ul>
      );
 }

@@ -9,3 +9,6 @@
   margin: auto;
   height: 100%;
 }
+.container {
+  text-align: left;
+}

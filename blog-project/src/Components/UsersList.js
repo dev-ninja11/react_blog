@@ -13,7 +13,10 @@ function UsersList() {
                 //Set our component's `post_list` array to the results of the API call
                 // which would be 'response.data' object
                 setUserList(response.data) 
-            })      
+            })
+            .catch(error => {
+                console.log(error.message)
+            })
     }
     useEffect(() => {
         getAllUser()

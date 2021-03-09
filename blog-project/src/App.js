@@ -16,39 +16,16 @@ function App() {
   return (
     <Router>
      <div className="App">
-          <Navbar/>
-        <div className="content">
-          <Switch>
-            
-            <Route  exact path='/'>
-              <HomePage/>
-            </Route>
-
-            <Route   path="/users">
-              <UsersList/>
-            </Route>
-
-            <Route  exact path="/details/:id">
-              <UsersDetails/>
-            </Route>
-
-            <Route      exact path="/posts">
-              <PostList/>
-            </Route>
-
-            <Route  exact path="/postDetails/:id">
-              <PostDetails/>
-            </Route>
-
-            <Route      exact path="/forms">
-              <Forms/>
-            </Route>
-
-            
-
-          </Switch>
-        </div>
-        
+        <Navbar />
+        <Switch>
+            <Route   path='/' component={Homepage} />
+            <Route   path="/users" component={UserList}/>
+            <Route   path="/details/:id" component={UsersDetails}/>
+            <Route   path="/posts" component={PostList}/>
+            <Route   path="/postDetails/:id" component={PostDetails}/>
+            <Route     path="/forms" component={Forms}/>
+        </Switch>
+              
      </div>
     </Router>
     
