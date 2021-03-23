@@ -10,7 +10,7 @@ The project focuses on the fundamental bases of React App's using  functional co
   * Bootstrap(to style the components)
   * Axios(to make  the API calls to the server),
   * react-router(to create route  for the components)
-  * json=server to create the backend api.
+  * json-server to create the backend api.
 
 
   I chose to use Axios to make API calls because of  its flexibility and ease of use. In this project, I created a base API services (in     api~BaseApi.js )that stored the root url of the backend api, and then created api sub-classes  with methods that use the relevant Axios method   like (get(), post(), delete(), and put() to make the API calls. 
