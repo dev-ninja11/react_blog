@@ -7,9 +7,9 @@ This is a react project that  allows a user to retrieve blog posts from differen
   
 The project focuses on the fundamental bases of React App's using  functional components. 
   Included in this project are: 
-  * Bootstrap(to style the components)
-  * Axios(to make  the API calls to the server),
-  * react-router(to create route  for the components)
+  * Bootstrap (to style the components)
+  * Axios (to make  the API calls to the server),
+  * react-router (to create route  for the components)
   * json-server to create the backend api.
 
 
