@@ -19,4 +19,4 @@ The project focuses on the fundamental bases of React App's using  functional co
   `json-server` is what I used for my  backend API. I was able to create the RESTful API so that I can perform the CRUD operations.
   
   
-   When working with  many components in a react project, `react-router` makes it easy to  create route  for each component 
+   When working with  many components in a react project, `react-router` makes it easy to create  a route for each component 
