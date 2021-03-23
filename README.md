@@ -1,8 +1,14 @@
 # Blog-Project_React
 
 This is a react project that  allows a user to retrieve blog posts from different API endpoints. 
-A user can access the users and post details for each blog, in addition it  also creates a new user to the blog.
-The project focuses on  fundamental bases of React APPs using  functional components. Included in this project are:
-Bootstrap(to style theCSS),Axios(to make API calls),React-router(to route components),  and JSON server for my backend data.
-I chose to use Axios to make API calls because of the easiness of use.  In this poroject, I created a base API component that stored the main url of the APP, and then created sub-components with functions that  that has the Axios methods like: get,post,delete to make the API calls. JSON server is what I used for my backend. I was able to create the Restful API so that I can perform the CRUD operations, and actually visualized the changing of data as I interact with it. When having many components in a project, React-Router makes it easy to route each component , and visualize the interaction of the user has it happens.
 
+  A user can access the users and post details for each blog. In addition it  also creates a new user on the blog.
+The project focuses on the fundamental bases of React App's using  functional components. 
+  Included in this project are: 
+  *Bootstrap(to style the components)
+  *Axios(to make  the API calls to the server),
+  *react-router(to create route  for the components)
+  *json=server to create the backend api.
+  I chose to use Axios to make API calls because of  its flexibility and ease of use. In this project, I created a base API services (in api~BaseApi.js )that stored the root url of the backend api, and then created api sub-classes  with methods that use the relevant Axios method like (get(), post(), delete(), and put() to make the API calls. 
+  `json-server` is what I used for my  backend api. I was able to create the RESTful API so that I can perform the CRUD operations.
+   When working with  many components in a react project, `react-router` makes it easy to  create route  for each component 
